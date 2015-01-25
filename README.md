@@ -22,11 +22,13 @@ data <- read.table("tidydata.txt", header = TRUE)
 
 ## How Script works
 1. Reads the training and testing source files from data set,also gives appropriate names to columns.
+    It also reads features.txt to extract feature names.
 2. Does labelling of feature measurements in training and testing data for ease of use
 3. Merges the training and the test sets to create one data set.
-4. Uses descriptive activity names to name the activities in the data set
+4. Uses descriptive activity names to name the activities in the data set.
+    Activity labels are taken from activity_labels.txt
 5. Extracts only the measurements on the mean and standard deviation for each measurement.                        
-    Here, measurements for on;ly mean() and std() are considered . patterns are given as "-mean()" and "-std()            specifically to exclude measurements like meanFreq().
+    Here, only measurements of mean() and std() are considered . patterns are given as "-mean()" and "-std()            specifically to exclude measurements like meanFreq().
 6. Modifies labels keeping Google's R style guide into consideration for human readability
 7. Creates a second, independent tidy data set with the average of each variable. ddply() function is used.
 8. Writes this new data to "tidydata.txt" file for further use.
