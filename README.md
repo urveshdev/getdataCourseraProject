@@ -11,6 +11,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 1. README.md - contains information about the files in directory
 2. Codebook.md - contains information about the variables, the data, and any transformations performed to clean up the data
 3. run_analysis.R - prepares tidy data useful for analysis from the raw dataset.
+4. tidydata.txt - tidy data after running the script
 
 ## Steps to run Script
 1. Unzip the data in current working directory
